@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="jquery-3.6.1.min.js"></script>
+    <title>пропелер</title>
+</head>
+<body>
+    <div class="box">
+    <p class="pr"></p>
+    </div>
+    <style type="text/css">
+        .pr{
+            background: red;
+            width: 100px;
+            height: 50px;
+            border-radius: 50%;
+            animation: .1s infinite apple;
+            position: fixed;
+        }
+        .box{
+            animation: 10s infinite box;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+        }
+        @keyframes box{
+            0%{
+                top: 0%;
+                left: 0%;
+            }
+            50%{
+                top: 50%;
+                left: 50%;
+            }
+            100%{
+                top: 0%;
+                right: 0%;
+            }
+        }
+        @keyframes apple{
+            0%{
+                transform: rotate(0deg);
+            }
+
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</body>
+</html>
